@@ -14,11 +14,8 @@ namespace BulkyWeb.Data
         {
                 modelBuilder.Entity<Category>().HasData(
                 new Category { Id = 1, Name = "Action", DisplayOrder = 1 },
-                new Category { Id = 2, Name = "SciFi", DisplayOrder = 2 },
-                new Category { Id = 3, Name = "History", DisplayOrder = 4 },
-                new Category { Id = 4, Name = "test", DisplayOrder = 5 },
-                new Category { Id = 5, Name = "launch", DisplayOrder = 6 },
-                new Category { Id = 6, Name = "run", DisplayOrder = 7 }
+                new Category { Id = 2, Name = "SciFi", DisplayOrder = 2 }
+                
 
                 );
         }
