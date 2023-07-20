@@ -8,6 +8,7 @@ using BulkyBook.DataAccess.Data;
 using BulkyBook.DataAccess.Repository.IRepository;
 using BulkyBook.DataAccess.Data;
 using Microsoft.EntityFrameworkCore;
+
 namespace BulkyBook.DataAccess.Repository
 {
     public class Repository<T> : IRepository<T> where T : class
@@ -22,7 +23,6 @@ namespace BulkyBook.DataAccess.Repository
             _db.Products.Include(u => u.Category).Include(u => u.CategoryId);
 
         }
-
 
         public void Add(T entity)
         {
@@ -59,11 +59,11 @@ namespace BulkyBook.DataAccess.Repository
             return query.ToList();
         }
 
-
         public void Remove(T entity)
         {
             dbSet.Remove(entity);
         }
+
         public void RemoveRange(IEnumerable<T> entity)
         {
             dbSet.RemoveRange(entity);
