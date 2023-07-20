@@ -1,7 +1,6 @@
 ﻿using BulkyBook.DataAccess.Repository.IRepository;
-using BulkyBook.DataAccess.Data;
 using BulkyBook.Models;
-
+using BulkyBook.DataAcess.Data;
 
 namespace BulkyBook.DataAccess.Repository
 {
